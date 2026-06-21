@@ -134,7 +134,7 @@
 git clone https://github.com/neo618/little-engineer-illustrator-skill.git
 ```
 
-将 `ian-xiaohei-illustrations/` 目录放入 EasyClaw skills 目录。
+将整个仓库目录放入 EasyClaw skills 目录即可，Skill 核心文件位于 `ian-xiaohei-illustrations/` 子目录中。
 
 ---
 
