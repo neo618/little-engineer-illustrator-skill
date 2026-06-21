@@ -1,6 +1,6 @@
 ---
-name: ian-xiaohei-illustrations
-description: 生成 Ian 风格的中文正文配图。用于用户要求为中文文章、帖子、博客、Notion 文档、工作流文档、方法论、流程、结构、状态、隐喻或观点生成"小工""工程师""正文配图""文章插图""配图建议""shot list""去标题/改图"等任务；默认使用小工 IP、干净数字 cel-shading、少量红橙蓝标注、简洁清爽的结构化视觉风格。
+name: xiaogong-illustrator
+description: 小工配图 Skill。用于中文技术文章、教程、博客的正文配图生成。Q版工程师小工 IP，数字 cel-shading 画风，纯白背景，16:9 横版。支持两套服装体系（办公衬衫/现场静电服），图生图优先确保形象一致。
 ---
 
 # Ian 小工工程师正文配图
