@@ -1,0 +1,6 @@
+test-output*.jpg
+electron-*.jpg
+scene*.jpg
+tmp/
+intermediate/
+test-output-v8.jpg

@@ -1,0 +1,556 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "ian-xiaohei-illustrations",
+    "languages": [
+      "markdown",
+      "yaml"
+    ],
+    "frameworks": [
+      "codex-skill"
+    ],
+    "description": "中文小黑怪诞正文配图生成 Skill | 16:9 白底手绘 | 少量红橙蓝批注",
+    "analyzedAt": "2026-06-19T13:35:00Z",
+    "gitCommitHash": "abc1234"
+  },
+  "nodes": [
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "项目主页：介绍 ian-xiaohei-illustrations 是什么、适用场景、安装方法和使用示例",
+      "tags": [
+        "readme",
+        "homepage",
+        "documentation"
+      ],
+      "sizeLines": 200,
+      "language": "markdown",
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:LICENSE",
+      "type": "document",
+      "name": "LICENSE",
+      "filePath": "LICENSE",
+      "summary": "MIT 开源许可证",
+      "tags": [
+        "license",
+        "legal"
+      ],
+      "sizeLines": 20,
+      "language": "plaintext",
+      "complexity": "simple"
+    },
+    {
+      "id": "document:NOTICE.md",
+      "type": "document",
+      "name": "NOTICE.md",
+      "filePath": "NOTICE.md",
+      "summary": "版权声明和使用说明",
+      "tags": [
+        "notice",
+        "copyright"
+      ],
+      "sizeLines": 15,
+      "language": "markdown",
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.gitignore",
+      "type": "config",
+      "name": ".gitignore",
+      "filePath": ".gitignore",
+      "summary": "Git 忽略规则",
+      "tags": [
+        "git",
+        "config"
+      ],
+      "sizeLines": 5,
+      "language": "gitignore",
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ian-xiaohei-illustrations/SKILL.md",
+      "type": "file",
+      "name": "SKILL.md",
+      "filePath": "ian-xiaohei-illustrations/SKILL.md",
+      "summary": "Skill 主文件：定义小黑配图的完整流程——分析文章、输出 shot list、逐张生图、QA 检查、保存输出",
+      "tags": [
+        "skill-entry",
+        "core-logic",
+        "workflow"
+      ],
+      "sizeLines": 130,
+      "language": "markdown",
+      "complexity": "complex"
+    },
+    {
+      "id": "document:ian-xiaohei-illustrations/references/style-dna.md",
+      "type": "document",
+      "name": "style-dna.md",
+      "filePath": "ian-xiaohei-illustrations/references/style-dna.md",
+      "summary": "风格 DNA 定义：纯白背景、黑色手绘线稿、颜色系统（黑/红/橙/蓝）、禁忌列表、气质描述",
+      "tags": [
+        "style",
+        "visual-dna",
+        "colors",
+        "constraints"
+      ],
+      "sizeLines": 50,
+      "language": "markdown",
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:ian-xiaohei-illustrations/references/xiaohei-ip.md",
+      "type": "document",
+      "name": "xiaohei-ip.md",
+      "filePath": "ian-xiaohei-illustrations/references/xiaohei-ip.md",
+      "summary": "小黑 IP 角色定义：外形（黑实心/白点眼/细腿）、性格（认真荒诞）、常见职责、禁止项",
+      "tags": [
+        "character",
+        "ip",
+        "xiaohei",
+        "persona"
+      ],
+      "sizeLines": 45,
+      "language": "markdown",
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:ian-xiaohei-illustrations/references/composition-patterns.md",
+      "type": "document",
+      "name": "composition-patterns.md",
+      "filePath": "ian-xiaohei-illustrations/references/composition-patterns.md",
+      "summary": "构图模式库：8 种结构类型（Workflow/系统局部/前后对比/角色状态/概念隐喻/方法分层/地图路线/小漫画）、隐喻方法、物件库",
+      "tags": [
+        "composition",
+        "patterns",
+        "metaphor",
+        "layout"
+      ],
+      "sizeLines": 80,
+      "language": "markdown",
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:ian-xiaohei-illustrations/references/prompt-template.md",
+      "type": "document",
+      "name": "prompt-template.md",
+      "filePath": "ian-xiaohei-illustrations/references/prompt-template.md",
+      "summary": "生图 Prompt 模板：标准生图模板、去标题编辑模板、增强怪诞感模板",
+      "tags": [
+        "prompt",
+        "template",
+        "image-generation"
+      ],
+      "sizeLines": 70,
+      "language": "markdown",
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:ian-xiaohei-illustrations/references/qa-checklist.md",
+      "type": "document",
+      "name": "qa-checklist.md",
+      "filePath": "ian-xiaohei-illustrations/references/qa-checklist.md",
+      "summary": "QA 检查清单：12 项通过标准、11 类触发重生成的情况、6 种迭代方向",
+      "tags": [
+        "qa",
+        "quality",
+        "checklist",
+        "iteration"
+      ],
+      "sizeLines": 50,
+      "language": "markdown",
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:ian-xiaohei-illustrations/agents/openai.yaml",
+      "type": "config",
+      "name": "openai.yaml",
+      "filePath": "ian-xiaohei-illustrations/agents/openai.yaml",
+      "summary": "OpenAI 平台的 Agent 配置",
+      "tags": [
+        "agent",
+        "config",
+        "openai"
+      ],
+      "sizeLines": 10,
+      "language": "yaml",
+      "complexity": "simple"
+    },
+    {
+      "id": "document:examples/prompts.md",
+      "type": "document",
+      "name": "prompts.md",
+      "filePath": "examples/prompts.md",
+      "summary": "使用示例：5 种典型场景的 prompt 模板（shot list、生成、单图、编辑）",
+      "tags": [
+        "examples",
+        "usage",
+        "prompts"
+      ],
+      "sizeLines": 40,
+      "language": "markdown",
+      "complexity": "simple"
+    },
+    {
+      "id": "data:assets/ian-wechat-qr.jpg",
+      "type": "document",
+      "name": "ian-wechat-qr.jpg",
+      "filePath": "assets/ian-wechat-qr.jpg",
+      "summary": "作者微信二维码图片",
+      "tags": [
+        "author",
+        "wechat",
+        "qr"
+      ],
+      "sizeLines": 0,
+      "language": "image",
+      "complexity": "simple"
+    },
+    {
+      "id": "data:examples/images/01-two-breakpoints.png",
+      "type": "document",
+      "name": "01-two-breakpoints.png",
+      "filePath": "examples/images/01-two-breakpoints.png",
+      "summary": "示例配图：两个断点",
+      "tags": [
+        "example",
+        "image",
+        "reference"
+      ],
+      "sizeLines": 0,
+      "language": "image",
+      "complexity": "simple"
+    },
+    {
+      "id": "data:examples/images/02-sort-by-purpose.png",
+      "type": "document",
+      "name": "02-sort-by-purpose.png",
+      "filePath": "examples/images/02-sort-by-purpose.png",
+      "summary": "示例配图：按目的分类",
+      "tags": [
+        "example",
+        "image",
+        "reference"
+      ],
+      "sizeLines": 0,
+      "language": "image",
+      "complexity": "simple"
+    },
+    {
+      "id": "data:examples/images/03-one-fish-many-uses.png",
+      "type": "document",
+      "name": "03-one-fish-many-uses.png",
+      "filePath": "examples/images/03-one-fish-many-uses.png",
+      "summary": "示例配图：一鱼多吃",
+      "tags": [
+        "example",
+        "image",
+        "reference"
+      ],
+      "sizeLines": 0,
+      "language": "image",
+      "complexity": "simple"
+    },
+    {
+      "id": "data:examples/images/04-handoff-path.png",
+      "type": "document",
+      "name": "04-handoff-path.png",
+      "filePath": "examples/images/04-handoff-path.png",
+      "summary": "示例配图：承接路径",
+      "tags": [
+        "example",
+        "image",
+        "reference"
+      ],
+      "sizeLines": 0,
+      "language": "image",
+      "complexity": "simple"
+    },
+    {
+      "id": "data:examples/images/05-information-well.png",
+      "type": "document",
+      "name": "05-information-well.png",
+      "filePath": "examples/images/05-information-well.png",
+      "summary": "示例配图：信息井",
+      "tags": [
+        "example",
+        "image",
+        "reference"
+      ],
+      "sizeLines": 0,
+      "language": "image",
+      "complexity": "simple"
+    },
+    {
+      "id": "data:examples/images/06-idea-press.png",
+      "type": "document",
+      "name": "06-idea-press.png",
+      "filePath": "examples/images/06-idea-press.png",
+      "summary": "示例配图：想法压榨机",
+      "tags": [
+        "example",
+        "image",
+        "reference"
+      ],
+      "sizeLines": 0,
+      "language": "image",
+      "complexity": "simple"
+    },
+    {
+      "id": "data:examples/images/07-content-fermentation.png",
+      "type": "document",
+      "name": "07-content-fermentation.png",
+      "filePath": "examples/images/07-content-fermentation.png",
+      "summary": "示例配图：内容发酵",
+      "tags": [
+        "example",
+        "image",
+        "reference"
+      ],
+      "sizeLines": 0,
+      "language": "image",
+      "complexity": "simple"
+    },
+    {
+      "id": "data:examples/images/08-trust-bridge.png",
+      "type": "document",
+      "name": "08-trust-bridge.png",
+      "filePath": "examples/images/08-trust-bridge.png",
+      "summary": "示例配图：信任桥",
+      "tags": [
+        "example",
+        "image",
+        "reference"
+      ],
+      "sizeLines": 0,
+      "language": "image",
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:ian-xiaohei-illustrations/SKILL.md",
+      "target": "document:ian-xiaohei-illustrations/references/style-dna.md",
+      "type": "references",
+      "weight": 0.9,
+      "label": "风格指令"
+    },
+    {
+      "source": "file:ian-xiaohei-illustrations/SKILL.md",
+      "target": "document:ian-xiaohei-illustrations/references/xiaohei-ip.md",
+      "type": "references",
+      "weight": 0.9,
+      "label": "角色指令"
+    },
+    {
+      "source": "file:ian-xiaohei-illustrations/SKILL.md",
+      "target": "document:ian-xiaohei-illustrations/references/composition-patterns.md",
+      "type": "references",
+      "weight": 0.9,
+      "label": "构图指令"
+    },
+    {
+      "source": "file:ian-xiaohei-illustrations/SKILL.md",
+      "target": "document:ian-xiaohei-illustrations/references/prompt-template.md",
+      "type": "references",
+      "weight": 0.9,
+      "label": "模板指令"
+    },
+    {
+      "source": "file:ian-xiaohei-illustrations/SKILL.md",
+      "target": "document:ian-xiaohei-illustrations/references/qa-checklist.md",
+      "type": "references",
+      "weight": 0.9,
+      "label": "QA 指令"
+    },
+    {
+      "source": "file:ian-xiaohei-illustrations/SKILL.md",
+      "target": "document:README.md",
+      "type": "related",
+      "weight": 0.5,
+      "label": "项目入口"
+    },
+    {
+      "source": "file:ian-xiaohei-illustrations/SKILL.md",
+      "target": "document:examples/prompts.md",
+      "type": "related",
+      "weight": 0.6,
+      "label": "使用示例"
+    },
+    {
+      "source": "file:ian-xiaohei-illustrations/SKILL.md",
+      "target": "config:ian-xiaohei-illustrations/agents/openai.yaml",
+      "type": "configures",
+      "weight": 0.5,
+      "label": "Agent 配置"
+    },
+    {
+      "source": "document:README.md",
+      "target": "document:LICENSE",
+      "type": "related",
+      "weight": 0.3
+    },
+    {
+      "source": "document:README.md",
+      "target": "document:NOTICE.md",
+      "type": "related",
+      "weight": 0.3
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:ian-xiaohei-illustrations/SKILL.md",
+      "type": "documents",
+      "weight": 0.8,
+      "label": "安装核心"
+    },
+    {
+      "source": "document:README.md",
+      "target": "document:examples/prompts.md",
+      "type": "documents",
+      "weight": 0.6,
+      "label": "使用示例"
+    },
+    {
+      "source": "document:ian-xiaohei-illustrations/references/style-dna.md",
+      "target": "document:ian-xiaohei-illustrations/references/qa-checklist.md",
+      "type": "related",
+      "weight": 0.5,
+      "label": "风格→质检"
+    },
+    {
+      "source": "document:ian-xiaohei-illustrations/references/xiaohei-ip.md",
+      "target": "document:ian-xiaohei-illustrations/references/style-dna.md",
+      "type": "related",
+      "weight": 0.5,
+      "label": "角色→风格"
+    },
+    {
+      "source": "document:ian-xiaohei-illustrations/references/composition-patterns.md",
+      "target": "document:ian-xiaohei-illustrations/references/prompt-template.md",
+      "type": "related",
+      "weight": 0.5,
+      "label": "构图→模板"
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:skill-core",
+      "name": "Skill 核心",
+      "description": "Skill 主文件及核心引用",
+      "nodeIds": [
+        "file:ian-xiaohei-illustrations/SKILL.md"
+      ]
+    },
+    {
+      "id": "layer:style-system",
+      "name": "风格系统",
+      "description": "视觉风格、角色 IP、构图模式、模板、质检",
+      "nodeIds": [
+        "document:ian-xiaohei-illustrations/references/style-dna.md",
+        "document:ian-xiaohei-illustrations/references/xiaohei-ip.md",
+        "document:ian-xiaohei-illustrations/references/composition-patterns.md",
+        "document:ian-xiaohei-illustrations/references/prompt-template.md",
+        "document:ian-xiaohei-illustrations/references/qa-checklist.md"
+      ]
+    },
+    {
+      "id": "layer:examples",
+      "name": "示例与文档",
+      "description": "使用示例、示例图片、项目文档",
+      "nodeIds": [
+        "document:README.md",
+        "document:examples/prompts.md",
+        "document:LICENSE",
+        "document:NOTICE.md",
+        "data:examples/images/01-two-breakpoints.png",
+        "data:examples/images/02-sort-by-purpose.png",
+        "data:examples/images/03-one-fish-many-uses.png",
+        "data:examples/images/04-handoff-path.png",
+        "data:examples/images/05-information-well.png",
+        "data:examples/images/06-idea-press.png",
+        "data:examples/images/07-content-fermentation.png",
+        "data:examples/images/08-trust-bridge.png"
+      ]
+    },
+    {
+      "id": "layer:config",
+      "name": "配置",
+      "description": "Agent 配置、Git 配置",
+      "nodeIds": [
+        "config:ian-xiaohei-illustrations/agents/openai.yaml",
+        "config:.gitignore"
+      ]
+    },
+    {
+      "id": "layer:assets",
+      "name": "资源文件",
+      "description": "作者二维码、内置示例图",
+      "nodeIds": [
+        "data:assets/ian-wechat-qr.jpg"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "项目概览",
+      "description": "从 README 了解这个 skill 是做什么的：为中文文章生成小黑怪诞风格的正文配图",
+      "nodeIds": [
+        "document:README.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "核心入口",
+      "description": "SKILL.md 是整个 skill 的大脑——定义完整的分析→shot list→生图→QA 流程",
+      "nodeIds": [
+        "file:ian-xiaohei-illustrations/SKILL.md"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "理解风格",
+      "description": "style-dna.md + xiaohei-ip.md 定义了视觉 DNA：纯白、手绘、小黑 IP、颜色系统",
+      "nodeIds": [
+        "document:ian-xiaohei-illustrations/references/style-dna.md",
+        "document:ian-xiaohei-illustrations/references/xiaohei-ip.md"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "掌握构图",
+      "description": "composition-patterns.md 提供 8 种构图模式 + 隐喻方法 + 反复刻规则",
+      "nodeIds": [
+        "document:ian-xiaohei-illustrations/references/composition-patterns.md"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "使用模板",
+      "description": "prompt-template.md 是生图的英文 Prompt 模板，每次生图时填充变量",
+      "nodeIds": [
+        "document:ian-xiaohei-illustrations/references/prompt-template.md"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "质检标准",
+      "description": "qa-checklist.md 定义了 12 项通过标准和迭代方案",
+      "nodeIds": [
+        "document:ian-xiaohei-illustrations/references/qa-checklist.md"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "看示例",
+      "description": "examples/prompts.md 展示了 5 种典型使用场景",
+      "nodeIds": [
+        "document:examples/prompts.md"
+      ]
+    }
+  ]
+}
