@@ -131,7 +131,7 @@
 ## 安装
 
 ```bash
-git clone https://github.com/yourname/little-engineer-illustrator-skill.git
+git clone https://github.com/neo618/little-engineer-illustrator-skill.git
 ```
 
 将 `ian-xiaohei-illustrations/` 目录放入 EasyClaw skills 目录。
@@ -212,6 +212,31 @@ little-engineer-illustrator-skill/
 └── assets/
     └── ian-wechat-qr.jpg
 ```
+
+---
+
+## 从哪改
+
+想自定义小工的形象、风格或行为？改这些文件：
+
+| 你想改什么 | 改哪个文件 | 改什么内容 |
+|-----------|-----------|-----------|
+| 🧑 小工的长相 | `references/xiaohei-ip.md` | 发型、眼镜、眼睛、肤色、服装色值、禁止项 |
+| 🎨 画风 / 配色 | `references/style-dna.md` | 线条粗细、色值、留白比例、审美方向 |
+| 📐 构图模式 | `references/composition-patterns.md` | 结构类型、物件池、小工动作池 |
+| ✍️ 生图 Prompt | `references/prompt-template.md` | 正向/负向关键词、图生图指令、服装切换 |
+| ✅ 质检规则 | `references/qa-checklist.md` | 必过项、失败信号、迭代方法 |
+| 📋 Skill 工作流 | `SKILL.md` | 配图策略、生成流程、输出口径 |
+
+修改后提交 Git，Skill 自动跟随。
+
+---
+
+## 致谢
+
+本项目基于 [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations) 演化而来。
+
+感谢原作者 **Ian (伊恩)** 的开源贡献和出色的 Skill 架构设计，为本项目提供了坚实的技术参考和灵感来源。
 
 ---
 
