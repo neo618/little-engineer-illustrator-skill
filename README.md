@@ -134,26 +134,36 @@
 git clone https://github.com/neo618/little-engineer-illustrator-skill.git
 ```
 
-将整个仓库目录放入 EasyClaw skills 目录即可，Skill 核心文件位于 `ian-xiaohei-illustrations/` 子目录中。
+将 `ian-xiaohei-illustrations/` 子目录放入 EasyClaw 的 skills 目录，EasyClaw 会自动加载该 Skill。
 
 ---
 
 ## 使用方法
 
+在 EasyClaw 对话中直接调用：
+
+```
+用 ian-xiaohei-illustrations skill 帮我分析这篇文章的配图方案
+```
+
+```
+用 ian-xiaohei-illustrations skill 为下面的文章生成 4-6 张正文配图
+```
+
+Skill 会自动：选服装体系 → 用参考底图做图生图 → 每张图描述场景 → 生成 → 按 QA 清单检查。
+
 ### 配图规划（不生成图片）
 
 ```
-分析这篇文章哪里值得配图，输出 shot list。
+用 ian-xiaohei-illustrations skill 分析这篇文章哪里值得配图，输出 shot list。
 每张图：放在哪段后、主题、结构类型、小工做什么、服装体系、中文标注词。
 ```
 
 ### 直接生成配图
 
 ```
-为下面的文章生成 4-6 张正文配图。
+用 ian-xiaohei-illustrations skill 为下面的文章生成 4-6 张正文配图。
 ```
-
-Skill 会自动：选服装体系 → 用参考底图做图生图 → 每张图描述场景 → 生成 → 按 QA 清单检查。
 
 ### 文章中的配图引用
 
